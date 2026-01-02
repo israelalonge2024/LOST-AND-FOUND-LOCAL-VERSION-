@@ -693,6 +693,9 @@ textarea {
   text-decoration: underline;
 }
 
+#mobile-navBar {
+  display: none;
+}
 @media (max-width: 600px) {
   .hero h2 {
     font-size: 24px;
@@ -716,6 +719,9 @@ textarea {
 
   .auth-box {
     padding: 24px;
+  }
+  #mobile-navBar {
+    display: block;
   }
 }
 
