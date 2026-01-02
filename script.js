@@ -141,6 +141,7 @@ function handleLogout() {
 
 // OPEN NAVBAR FOR MOBILE
 const openNav = document.getElementById("openN");
+openNav.addEventListener("click", function () {});
 // Profile functions
 function toggleProfile() {
   const feedView = document.getElementById("feedView");

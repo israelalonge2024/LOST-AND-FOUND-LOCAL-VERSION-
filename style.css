@@ -722,6 +722,12 @@ textarea {
   }
   #mobile-navBar {
     display: block;
+    position: fixed;
+    width: 90%;
+    max-width: 800px;
+    background: #0f1419;
+    color: white;
+    padding: 8 12px;
   }
   .nav-right {
     display: none;
@@ -736,4 +742,8 @@ textarea {
 .icon {
   width: 20px;
   height: 20px;
+}
+
+.hidden {
+  display: none;
 }
