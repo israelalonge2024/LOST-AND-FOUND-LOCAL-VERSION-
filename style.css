@@ -726,6 +726,10 @@ textarea {
   .nav-right {
     display: none;
   }
+  .mobile-nav-button {
+    background-color: none;
+    border: none;
+  }
 }
 
 .icon {
