@@ -723,6 +723,9 @@ textarea {
   #mobile-navBar {
     display: block;
   }
+  .nav-right {
+    display: none;
+  }
 }
 
 .icon {
