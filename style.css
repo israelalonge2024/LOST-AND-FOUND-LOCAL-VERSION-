@@ -736,7 +736,13 @@ textarea {
     display: flex;
     flex-direction: column;
     padding: 12px 8px;
+    align-items: start;
     gap: 15px;
+  }
+  .links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
   }
   .nav-right {
     display: none;
