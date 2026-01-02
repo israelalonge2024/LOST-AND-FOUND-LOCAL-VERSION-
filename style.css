@@ -732,7 +732,12 @@ textarea {
     padding: 10px 12px;
     min-height: 600px;
   }
-
+  .linkDi {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 8px;
+    gap: 15px;
+  }
   .nav-right {
     display: none;
   }
