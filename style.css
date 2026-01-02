@@ -721,9 +721,10 @@ textarea {
     padding: 24px;
   }
   #mobile-navBar {
-    display: block;
+    display: none;
     position: fixed;
     top: 1px;
+
     left: 0;
     width: 100%;
     max-width: 480px;
@@ -744,9 +745,7 @@ textarea {
     gap: 30px;
     align-items: center;
   }
-  .nav-right {
-    display: none;
-  }
+
   .mobile-nav-button {
     background-color: transparent;
     border: none;
