@@ -727,8 +727,9 @@ textarea {
     display: none;
   }
   .mobile-nav-button {
-    background-color: none;
+    background-color: transparent;
     border: none;
+    width: 50px;
   }
 }
 
