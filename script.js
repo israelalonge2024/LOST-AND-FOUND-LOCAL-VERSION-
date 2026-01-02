@@ -139,6 +139,8 @@ function handleLogout() {
   showAuth();
 }
 
+// OPEN NAVBAR FOR MOBILE
+
 // Profile functions
 function toggleProfile() {
   const feedView = document.getElementById("feedView");
