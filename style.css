@@ -723,12 +723,16 @@ textarea {
   #mobile-navBar {
     display: block;
     position: fixed;
-    width: 90%;
-    max-width: 800px;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    max-width: 480px;
     background: #0f1419;
     color: white;
-    padding: 8 12px;
+    padding: 10px 12px;
+    min-height: 600px;
   }
+
   .nav-right {
     display: none;
   }

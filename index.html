@@ -40,22 +40,23 @@
         <!-- Center links-->
         <div class="nav-center"></div>
         <!-- Navigation for mobile phone-->
+        <button id="openNv" class="mobile-nav-button">
+          <i class="fa-solid fa-bars icon" style="color: rgb(30, 122, 158)"></i>
+        </button>
         <div id="mobile-navBar">
-          <button id="openNv" class="mobile-nav-button">
-            <i
-              class="fa-solid fa-bars icon"
-              style="color: rgb(30, 122, 158)"
-            ></i>
-          </button>
           <div id="mobile-links">
             <h2>TraceSnap</h2>
             <!-- Search -->
             <div class="search-container">
-              <div class="search-box">
+              <div
+                class="search-box"
+                style="background: rgb(26, 26, 26); color: white"
+              >
                 <span> <i class="fas fa-search"></i></span>
                 <input
                   type="text"
                   id="searchInput"
+                  style="color: white"
                   placeholder="Search posts..."
                   oninput="handleSearch()"
                 />
