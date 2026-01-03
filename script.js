@@ -387,7 +387,7 @@ function createPostElement(post) {
                   : ""
               }
             </div>
-            
+             <button id="openCommentDiv">show more</button>
             <div class="comment-section">
               ${
                 commentCount > 0
@@ -409,7 +409,7 @@ function createPostElement(post) {
                   <i class="fas fa-paper-plane"></i>
                 </button>
               </div>
-             <button onclick="openCommentDiv()">show more</button>
+            
               <div id="comment-list" class="hidden">
                 ${
                   post.comments && post.comments.length > 0
@@ -504,7 +504,11 @@ function handleComment(postId) {
     return post;
   });
 
-  function openCommentDiv() {}
+  const openCommentDiv = document.getElementById("openCommentDiv");
+  const commentlist = document.getElementById("comment-list");
+  openCommentDiv.addEventListener("click", function () {
+    commentlist.classList.remove("hidden");
+  });
 
   localStorage.setItem("posts", JSON.stringify(posts));
   renderFeed();
