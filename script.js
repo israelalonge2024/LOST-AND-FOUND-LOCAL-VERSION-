@@ -433,6 +433,12 @@ function createPostElement(post) {
 
   return postDiv;
 }
+function openComment() {
+  const commentlist = document.querySelector("comment-list");
+  const commentwrapper = document.querySelector("comment-input-wrapper");
+  commentwrapper.classList.toggle("hidden");
+  commentlist.classList.toggle("hidden");
+}
 
 function handleLike(postId) {
   if (!currentUser) {
