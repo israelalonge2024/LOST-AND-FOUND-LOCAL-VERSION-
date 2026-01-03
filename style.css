@@ -709,7 +709,6 @@ textarea {
 .comment-btn i {
   font-size: 30px;
   color: var(--accent-blue);
-  cursor: pointer;
 }
 .comment-btn {
   background-color: transparent;
