@@ -701,6 +701,7 @@ textarea {
   flex-direction: row;
   gap: 20px;
   justify-content: center;
+  margin-top: 15px;
   align-items: center;
 }
 .comment-input-wrapper input {
