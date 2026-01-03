@@ -705,6 +705,7 @@ textarea {
 }
 .comment-input-wrapper input {
   width: 80%;
+  background-color: skyblue;
 }
 .comment-btn i {
   font-size: 30px;
