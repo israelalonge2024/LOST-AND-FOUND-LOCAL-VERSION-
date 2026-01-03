@@ -391,7 +391,7 @@ function createPostElement(post) {
             <div class="comment-section">
               ${
                 commentCount > 0
-                  ? `<div class="comment-count"><button style="background:transparent; cursor:pointer; border:none;" onclick="openComment()"> <i class="far fa-comment"></i> </button> ${commentCount} ${
+                  ? `<div class="comment-count"><button class="openC" style="background:transparent; cursor:pointer; border:none;" onclick="openComment()"> <i class="far fa-comment"></i> </button> ${commentCount} ${
                       commentCount === 1 ? "comment" : "comments"
                     }</div>`
                   : ""

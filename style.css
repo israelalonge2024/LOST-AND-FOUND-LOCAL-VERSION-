@@ -704,6 +704,12 @@ textarea {
   margin-top: 15px;
   align-items: center;
 }
+.openC {
+  transition: transform 0.5s ease;
+}
+.openC:hover {
+  transform: translateY(-7px);
+}
 .comment-input-wrapper input {
   width: 80%;
   background-color: rgb(246, 249, 252);
