@@ -387,11 +387,17 @@ function createPostElement(post) {
                   : ""
               }
             </div>
-             <button id="openCommentDiv">show more</button>
+             <button id="open-comments-${
+               post.id
+             }" class="open-comment-btn" onclick="toggleComments(${
+    post.id
+  })">show more</button>
             <div class="comment-section">
               ${
                 commentCount > 0
-                  ? `<div class="comment-count"><button class="openC" style="background:transparent; cursor:pointer; border:none;" id="opennb"> <i class="far fa-comment"></i> </button> ${commentCount} ${
+                  ? `<div class="comment-count"><button class="openC" style="background:transparent; cursor:pointer; border:none;" onclick="toggleComments(${
+                      post.id
+                    })"> <i class="far fa-comment"></i> </button> ${commentCount} ${
                       commentCount === 1 ? "comment" : "comments"
                     }</div>`
                   : ""
@@ -410,7 +416,7 @@ function createPostElement(post) {
                 </button>
               </div>
             
-              <div id="comment-list" class="hidden">
+              <div id="comment-list-${post.id}" class="hidden">
                 ${
                   post.comments && post.comments.length > 0
                     ? post.comments
@@ -472,6 +478,17 @@ function handleCommentKeyPress(event, postId) {
   }
 }
 
+// Toggle visibility of comments for a specific post
+function toggleComments(postId) {
+  const el = document.getElementById(`comment-list-${postId}`);
+  const btn = document.getElementById(`open-comments-${postId}`);
+  if (!el) return;
+  el.classList.toggle("hidden");
+  if (btn) {
+    btn.textContent = el.classList.contains("hidden") ? "show more" : "hide";
+  }
+}
+
 function handleComment(postId) {
   if (!currentUser) {
     alert("Please log in to comment");
@@ -504,15 +521,14 @@ function handleComment(postId) {
     return post;
   });
 
-  const openCommentDiv = document.getElementById("openCommentDiv");
-  const commentlist = document.getElementById("comment-list");
-  openCommentDiv.addEventListener("click", function () {
-    commentlist.classList.remove("hidden");
-  });
-
   localStorage.setItem("posts", JSON.stringify(posts));
   renderFeed();
+  // clear the input after adding the comment
+  if (input) input.value = "";
   updateStats();
+  // ensure comments are visible after adding a comment (DOM was re-rendered)
+  const commentListEl = document.getElementById(`comment-list-${postId}`);
+  if (commentListEl) commentListEl.classList.remove("hidden");
 
   // Update profile if showing
   if (!document.getElementById("profileView").classList.contains("hidden")) {
