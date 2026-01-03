@@ -707,8 +707,13 @@ textarea {
 .openC {
   transition: transform 0.5s ease;
 }
+.openC i {
+  font-size: 18px;
+  color: rgb(129, 185, 233);
+  font-weight: 300;
+}
 .openC:hover {
-  transform: translateY(-7px);
+  transform: translateY(-3px);
 }
 .comment-input-wrapper input {
   width: 80%;
