@@ -387,11 +387,7 @@ function createPostElement(post) {
                   : ""
               }
             </div>
-             <button id="open-comments-${
-               post.id
-             }" class="open-comment-btn" onclick="toggleComments(${
-    post.id
-  })">show more</button>
+            
             <div class="comment-section">
               ${
                 commentCount > 0
@@ -403,7 +399,7 @@ function createPostElement(post) {
                   : ""
               }
               
-              <div id="comment-input-wrapper">
+              <div id="comment-input-wrapper" class="hidden">
                 <input 
                   type="text" 
                   class="comment-input" 
@@ -482,6 +478,8 @@ function handleCommentKeyPress(event, postId) {
 function toggleComments(postId) {
   const el = document.getElementById(`comment-list-${postId}`);
   const btn = document.getElementById(`open-comments-${postId}`);
+  const commentinputwrapper = document.getElementById("comment-input-wrapper");
+  commentinputwrapper.classList.toggle("hidden");
   if (!el) return;
   el.classList.toggle("hidden");
   if (btn) {
