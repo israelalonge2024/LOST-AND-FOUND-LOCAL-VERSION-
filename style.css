@@ -700,12 +700,22 @@ textarea {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  align-items: center;
 }
 .comment-input-wrapper input {
   width: 80%;
 }
 .comment-btn i {
   font-size: 20px;
+  color: skyblue;
+}
+.comment-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.comment-btn:hover {
+  transform: ;
 }
 @media (max-width: 600px) {
   .hero h2 {
