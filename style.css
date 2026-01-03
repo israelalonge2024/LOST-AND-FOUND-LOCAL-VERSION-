@@ -95,7 +95,7 @@ body.light-mode .nav-bar {
 
 .auth-box {
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
   background-color: var(--bg-secondary);
   padding: 40px;
   border-radius: 16px;
@@ -717,9 +717,11 @@ textarea {
 }
 #comment-input-wrapper input {
   width: 80%;
+  font-weight: 600;
+}
+body.light-mode #comment-input-wrapper input {
   background-color: rgb(246, 249, 252);
   border-bottom: 1px solid rgb(70, 148, 238);
-  font-weight: 600;
 }
 #comment-input-wrapper input:focus {
   border-bottom: 1px solid rgb(81, 163, 240);
@@ -738,6 +740,14 @@ textarea {
   transform: translateY(-7px);
 }
 @media (max-width: 600px) {
+  auth-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--bg-secondary);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+  }
   .hero h2 {
     font-size: 24px;
   }
