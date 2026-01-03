@@ -391,13 +391,13 @@ function createPostElement(post) {
             <div class="comment-section">
               ${
                 commentCount > 0
-                  ? `<div class="comment-count"><button class="openC" style="background:transparent; cursor:pointer; border:none;" onclick="openComment()"> <i class="far fa-comment"></i> </button> ${commentCount} ${
+                  ? `<div class="comment-count"><button class="openC" style="background:transparent; cursor:pointer; border:none;" id="opennb"> <i class="far fa-comment"></i> </button> ${commentCount} ${
                       commentCount === 1 ? "comment" : "comments"
                     }</div>`
                   : ""
               }
               
-              <div class="comment-input-wrapper hidden">
+              <div id="comment-input-wrapper">
                 <input 
                   type="text" 
                   class="comment-input" 
@@ -409,8 +409,8 @@ function createPostElement(post) {
                   <i class="fas fa-paper-plane"></i>
                 </button>
               </div>
-              
-              <div class="comment-list hidden">
+             <button onclick="openCommentDiv()">show more</button>
+              <div id="comment-list" class="hidden">
                 ${
                   post.comments && post.comments.length > 0
                     ? post.comments
@@ -432,12 +432,6 @@ function createPostElement(post) {
       `;
 
   return postDiv;
-}
-function openComment() {
-  const commentlist = document.querySelector("comment-list");
-  const commentwrapper = document.querySelector("comment-input-wrapper");
-  commentwrapper.classList.toggle("hidden");
-  commentlist.classList.toggle("hidden");
 }
 
 function handleLike(postId) {
@@ -509,6 +503,8 @@ function handleComment(postId) {
     }
     return post;
   });
+
+  function openCommentDiv() {}
 
   localStorage.setItem("posts", JSON.stringify(posts));
   renderFeed();

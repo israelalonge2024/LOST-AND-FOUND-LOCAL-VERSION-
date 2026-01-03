@@ -696,7 +696,7 @@ textarea {
 #mobile-navBar {
   display: none;
 }
-.comment-input-wrapper {
+#comment-input-wrapper {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -715,13 +715,13 @@ textarea {
 .openC:hover {
   transform: translateY(-3px);
 }
-.comment-input-wrapper input {
+#comment-input-wrapper input {
   width: 80%;
   background-color: rgb(246, 249, 252);
   border-bottom: 1px solid rgb(70, 148, 238);
   font-weight: 600;
 }
-.comment-input-wrapper input:focus {
+#comment-input-wrapper input:focus {
   border-bottom: 1px solid rgb(81, 163, 240);
 }
 .comment-btn i {
