@@ -197,6 +197,7 @@ textarea {
   position: relative;
   bottom: 50px;
   right: 500px;
+  display: flex;
   justify-content: center;
 }
 .editdiv button {
