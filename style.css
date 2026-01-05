@@ -188,6 +188,12 @@ textarea {
 .edit-profile {
   padding: 12px 8px;
 }
+.saveChange {
+  padding: 5px;
+  width: 200px;
+  border-radius: 20px;
+  height: 40px;
+}
 /* Main App */
 .app-container {
   margin: 0 auto;
