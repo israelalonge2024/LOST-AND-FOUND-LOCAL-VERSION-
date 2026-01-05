@@ -187,15 +187,22 @@ textarea {
 .eidtimage {
   background-color: gainsboro;
   display: flex;
-  justify-content: center;
+
   padding: 12px 8px;
   margin-top: 20px;
-  position: relative;
   margin-bottom: 20px;
-
   height: 250px;
 }
-
+.editdiv {
+  position: relative;
+  bottom: 50px;
+  right: 500px;
+  justify-content: center;
+}
+.editdiv button {
+  position: absolute;
+  top: 40px;
+}
 .edit-profile {
   padding: 12px 8px;
 }
