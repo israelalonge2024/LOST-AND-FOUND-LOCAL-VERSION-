@@ -184,14 +184,22 @@ textarea {
   background-color: green;
   color: #fff;
 }
+.eidtimage {
+  background-color: gainsboro;
+  height: 100px;
+  max-height: 140px;
+}
 
 .edit-profile {
   padding: 12px 8px;
 }
 .saveChange {
   padding: 5px;
-  width: 200px;
+  width: 300px;
   border-radius: 20px;
+  border: none;
+  background-color: skyblue;
+  color: #0f1419;
   height: 40px;
 }
 /* Main App */
