@@ -181,10 +181,13 @@ textarea {
   color: #fff;
 }
 .btn-edit {
-  background-color: var(--accent-red);
+  background-color: green;
   color: #fff;
 }
 
+.edit-profile {
+  padding: 12px 8px;
+}
 /* Main App */
 .app-container {
   margin: 0 auto;
