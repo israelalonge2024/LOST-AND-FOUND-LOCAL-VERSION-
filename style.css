@@ -180,6 +180,10 @@ textarea {
   background-color: var(--accent-red);
   color: #fff;
 }
+.btn-edit {
+  background-color: var(--accent-red);
+  color: #fff;
+}
 
 /* Main App */
 .app-container {
