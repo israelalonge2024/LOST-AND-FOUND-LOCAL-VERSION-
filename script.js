@@ -222,7 +222,7 @@ function handleCreatePost() {
     return;
   }
 
-  showAlert("📤 Creating your post...", 2000);
+  showAlert("📤 Post created successfully...", 2000);
 
   if (imageFile) {
     const reader = new FileReader();
