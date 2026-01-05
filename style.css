@@ -186,8 +186,13 @@ textarea {
 }
 .eidtimage {
   background-color: gainsboro;
-  height: 100px;
-  max-height: 140px;
+  display: flex;
+  justify-content: center;
+  padding: 12px 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  height: 250px;
 }
 
 .edit-profile {
