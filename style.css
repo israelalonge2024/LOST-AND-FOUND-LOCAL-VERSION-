@@ -165,7 +165,7 @@ textarea {
 }
 
 .btn-primary:hover {
-  background-color: blue;
+  background-color: rgb(86, 173, 207);
 }
 
 .btn-secondary {
@@ -173,7 +173,9 @@ textarea {
   border: 1px solid var(--border-color);
   color: var(--text-primary);
 }
-
+.btn-secondary:hover {
+  background-color: rgb(214, 236, 255);
+}
 .btn-danger {
   background-color: var(--accent-red);
   color: #fff;
