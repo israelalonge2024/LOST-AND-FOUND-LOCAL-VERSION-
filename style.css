@@ -190,6 +190,7 @@ textarea {
   justify-content: center;
   padding: 12px 8px;
   margin-top: 20px;
+  position: relative;
   margin-bottom: 20px;
 
   height: 250px;
