@@ -546,6 +546,11 @@ function editprofile() {
 function addPhoto() {
   const ImageInput = document.getElementById("imageInput").files[0];
   const showImage = document.getElementById("Imageres");
+  const reader = new FileReader();
+  reader.onload = function () {
+    const image = { images: reader.result };
+  };
+  ImageInput.readAsDataURL(reader);
 }
 // Initialize app on load
 init();
