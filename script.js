@@ -539,6 +539,7 @@ function handleComment(postId) {
 // Edit profile section
 function editprofile() {
   const profileDiv = document.getElementById("edit-profile");
+  profileDiv.classList.toggle("hidden");
 }
 // Initialize app on load
 init();
