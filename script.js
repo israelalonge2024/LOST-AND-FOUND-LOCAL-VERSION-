@@ -541,6 +541,12 @@ function editprofile() {
   const profileDiv = document.getElementById("edit-profile");
   profileDiv.classList.toggle("hidden");
 }
+
+// ADDING A PROFILE IMAGE (the one received by the user from the input)
+function addPhoto() {
+  const ImageInput = document.getElementById("imageInput").files[0];
+  const showImage = document.getElementById("Imageres");
+}
 // Initialize app on load
 init();
 
