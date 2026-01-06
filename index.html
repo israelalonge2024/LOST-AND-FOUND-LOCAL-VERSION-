@@ -212,6 +212,17 @@
               >
                 <i class="fa fa-pen" style="font-size: 30px"></i>
               </button>
+
+              <!-- from -->
+              <input type="file" id="imageInput" style="display: none" />
+              <script>
+                document
+                  .querySelector(".editicon")
+                  .addEventListener("click", () => {
+                    document.getElementById("imageInput").click();
+                  });
+              </script>
+              <!-- end-->
             </div>
             <!--EDIT NAME -->
             <label>Name</label>
