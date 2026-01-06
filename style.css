@@ -194,9 +194,11 @@ textarea {
   margin-bottom: 20px;
   height: 250px;
 }
-.eidtimage image {
+
+.editicon {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
+  right: 42%;
 }
 .edit-profile {
   padding: 12px 8px;
