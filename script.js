@@ -536,6 +536,10 @@ function handleComment(postId) {
   showAlert("✅ Comment added!", 2000);
 }
 
+// Edit profile section
+function editprofile() {
+  const profileDiv = document.getElementById("edit-profile");
+}
 // Initialize app on load
 init();
 
