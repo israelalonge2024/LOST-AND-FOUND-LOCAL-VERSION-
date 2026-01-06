@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="style.css" />
   <body>
     <!-- Auth Container -->
-    <div id="authContainer" class="auth-container">
+    <!--<div id="authContainer" class="auth-container">
       <div class="auth-box">
         <div class="auth-header">
           <h1>TraceSnap</h1>
@@ -31,9 +31,10 @@
         </button>
       </div>
     </div>
-
+    -->
     <!-- Main App -->
-    <div id="appContainer" class="hidden">
+
+    <div id="appContainer">
       <!-- Navigation -->
       <nav class="nav-bar">
         <div class="logo">TraceSnap</div>
@@ -185,7 +186,7 @@
             <i class="fas fa-sign-out-alt"></i> Logout
           </button>
         </div>
-        <div class="edit-profile">
+        <div id="edit-profile" class="hidden">
           <button
             class="btn btn-edit"
             onclick="editprofile()"

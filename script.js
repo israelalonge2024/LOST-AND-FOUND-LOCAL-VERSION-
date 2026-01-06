@@ -54,7 +54,7 @@ if (localStorage.getItem("theme") === "light") {
     '<i class="fas fa-moon"></i>';
 }
 
-// Auth functions
+//Auth functions
 function showAuth() {
   document.getElementById("authContainer").classList.remove("hidden");
   document.getElementById("appContainer").classList.add("hidden");
