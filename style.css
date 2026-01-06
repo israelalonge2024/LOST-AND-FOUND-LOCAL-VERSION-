@@ -182,6 +182,7 @@ textarea {
 }
 .btn-edit {
   background-color: green;
+  margin: 12px 8px;
   color: #fff;
 }
 .eidtimage {
